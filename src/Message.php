@@ -5,21 +5,35 @@ namespace Nutama\MattermostWebhook;
 final class Message implements MessageInterface
 {
     /**
+     * Message that will be shown by the bot.
+     *
      * @var string
      */
     private $text;
 
     /**
+     * Channel where the message will be shown.
+     *
      * @var string
      */
     private $channel;
 
     /**
+     * Username of the bot.
+     *
+     * Option "Enable integrations to override usernames" must be enabled
+     * on the server to override the shown username.
+     *
      * @var string
      */
     private $username;
 
     /**
+     * Image url to use as the profile picture of the bot.
+     *
+     * Option "Enable integrations to override profile picture icons" must be enabled
+     * on the server to override the profile picture.
+     *
      * @var string
      */
     private $icon_url;
