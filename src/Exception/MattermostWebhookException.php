@@ -2,6 +2,9 @@
 declare(strict_types=1);
 namespace Nutama\MattermostWebhook\Exception;
 
+/**
+ * Thrown when an invalid payload was sent to the Mattermost webhook.
+ */
 class MattermostWebhookException extends \Exception
 {
     /**
