@@ -7,6 +7,7 @@ See [https://docs.mattermost.com/developer/webhooks-incoming.html](https://docs.
 for the documentation of the incoming webhook of Mattermost.
 
 [![Build Status](https://travis-ci.org/nutama/mattermost-webhook.svg?branch=master)](https://travis-ci.org/nutama/mattermost-webhook)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/55b70bd5-d02e-49ca-9fbb-8f685cf0f207/mini.png)](https://insight.sensiolabs.com/projects/55b70bd5-d02e-49ca-9fbb-8f685cf0f207)
 
 Installation / Usage
 --------------------
