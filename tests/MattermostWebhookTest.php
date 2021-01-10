@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class MattermostWebhookTest extends TestCase
 {
-    public function testSend()
+    public function testSend(): void
     {
         $client             = $this->prophesize(ClientInterface::class);
         $mattermost_webhook = new MattermostWebhook($client->reveal());
@@ -24,7 +24,7 @@ final class MattermostWebhookTest extends TestCase
         $mattermost_webhook->send($message);
     }
 
-    public function testSendWithUri()
+    public function testSendWithUri(): void
     {
         $client             = $this->prophesize(ClientInterface::class);
         $mattermost_webhook = new MattermostWebhook($client->reveal(), 'http://{your-mattermost-site}');
@@ -37,7 +37,7 @@ final class MattermostWebhookTest extends TestCase
         $mattermost_webhook->send($message);
     }
 
-    public function testSendWithClientException()
+    public function testSendWithClientException(): void
     {
         $client             = $this->prophesize(ClientInterface::class);
         $mattermost_webhook = new MattermostWebhook($client->reveal());

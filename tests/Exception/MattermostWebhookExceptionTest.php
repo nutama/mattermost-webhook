@@ -15,12 +15,12 @@ final class MattermostWebhookExceptionTest extends TestCase
      */
     private $exception;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->exception = new MattermostWebhookException();
     }
 
-    public function testObject()
+    public function testObject(): void
     {
         self::assertSame('', $this->exception->getMessage());
         self::assertSame(0, $this->exception->getCode());
