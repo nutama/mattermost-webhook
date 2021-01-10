@@ -15,7 +15,7 @@ final class MessageTest extends TestCase
      * @param array $expected_payload
      * @param MessageInterface $message
      */
-    public function testGetPayload(array $expected_payload, MessageInterface $message)
+    public function testGetPayload(array $expected_payload, MessageInterface $message): void
     {
         self::assertSame($expected_payload, $message->getPayload());
     }
